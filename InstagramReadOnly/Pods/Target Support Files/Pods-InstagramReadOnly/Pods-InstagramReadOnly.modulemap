@@ -1,0 +1,6 @@
+framework module Pods_InstagramReadOnly {
+  umbrella header "Pods-InstagramReadOnly-umbrella.h"
+
+  export *
+  module * { export * }
+}
