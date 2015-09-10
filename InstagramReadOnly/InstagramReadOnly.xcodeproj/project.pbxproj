@@ -12,6 +12,7 @@
 		892534DB1BA2474400085B3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892534D91BA2474400085B3C /* Main.storyboard */; };
 		892534DD1BA2474400085B3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 892534DC1BA2474400085B3C /* Assets.xcassets */; };
 		892534E01BA2474400085B3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892534DE1BA2474400085B3C /* LaunchScreen.storyboard */; };
+		89417D4F1BA24C4A008714E0 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89417D4E1BA24C4A008714E0 /* PhotosViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		892534DC1BA2474400085B3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		892534DF1BA2474400085B3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		892534E11BA2474400085B3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89417D4E1BA24C4A008714E0 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		CF0909F8E250E34D494DFA84 /* Pods-InstagramReadOnly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramReadOnly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstagramReadOnly/Pods-InstagramReadOnly.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +66,7 @@
 				892534DC1BA2474400085B3C /* Assets.xcassets */,
 				892534DE1BA2474400085B3C /* LaunchScreen.storyboard */,
 				892534E11BA2474400085B3C /* Info.plist */,
+				89417D4E1BA24C4A008714E0 /* PhotosViewController.swift */,
 			);
 			path = InstagramReadOnly;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				892534D61BA2474400085B3C /* AppDelegate.swift in Sources */,
+				89417D4F1BA24C4A008714E0 /* PhotosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
