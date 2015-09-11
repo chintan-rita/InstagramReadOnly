@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0AF0F81BA256B200643404 /* PhotoViewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AF0F71BA256B200643404 /* PhotoViewCellTableViewCell.swift */; };
 		2D46D327E791676CEF00C80A /* Pods_InstagramReadOnly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA8096744EEF4819D82D39A /* Pods_InstagramReadOnly.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		892534D61BA2474400085B3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892534D51BA2474400085B3C /* AppDelegate.swift */; };
 		892534DB1BA2474400085B3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892534D91BA2474400085B3C /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A0AF0F71BA256B200643404 /* PhotoViewCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewCellTableViewCell.swift; sourceTree = "<group>"; };
 		0AA8096744EEF4819D82D39A /* Pods_InstagramReadOnly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramReadOnly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87AEA267A339B33CD3AED29D /* Pods-InstagramReadOnly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramReadOnly.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstagramReadOnly/Pods-InstagramReadOnly.release.xcconfig"; sourceTree = "<group>"; };
 		892534D21BA2474400085B3C /* InstagramReadOnly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramReadOnly.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +69,7 @@
 				892534DE1BA2474400085B3C /* LaunchScreen.storyboard */,
 				892534E11BA2474400085B3C /* Info.plist */,
 				89417D4E1BA24C4A008714E0 /* PhotosViewController.swift */,
+				0A0AF0F71BA256B200643404 /* PhotoViewCellTableViewCell.swift */,
 			);
 			path = InstagramReadOnly;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			files = (
 				892534D61BA2474400085B3C /* AppDelegate.swift in Sources */,
 				89417D4F1BA24C4A008714E0 /* PhotosViewController.swift in Sources */,
+				0A0AF0F81BA256B200643404 /* PhotoViewCellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

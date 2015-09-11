@@ -7,14 +7,37 @@
 //
 
 import UIKit
+import AFNetworking
 
-class PhotosViewController: UIViewController {
+class PhotosViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var tableView: UITableView!
+    var photos = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         makeNetworkRequest()
+        tableView.rowHeight = 320;
         // Do any additional setup after loading the view.
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return photos.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("com.PhotoViewCell", forIndexPath: indexPath) as! PhotoViewCellTableViewCell
+        
+        if let photo = photos[indexPath.row] as? NSDictionary {
+            if let images = photo["images"] as? NSDictionary {
+                if let lowResolutionImage = images["low_resolution"] as? String {
+                    let photoUrl = NSURL(string:lowResolutionImage)!
+                    cell.photoView.setImageWithURL(photoUrl)
+                }
+            }
+        }
+        
+        return cell
     }
     
     func makeNetworkRequest() {
@@ -27,12 +50,9 @@ class PhotosViewController: UIViewController {
             let responseDictionary = try! NSJSONSerialization.JSONObjectWithData(data!, options: []) as! NSDictionary
         
         
-        let photos = responseDictionary["data"] as! NSArray
-        NSLog("response: \(photos)")
-
-            
-
-//            self.tableView.reloadData()
+        self.photos = responseDictionary["data"] as! NSArray
+        
+        self.tableView.reloadData()
             
 
         }
