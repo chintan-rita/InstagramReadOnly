@@ -30,9 +30,11 @@ class PhotosViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         if let photo = photos[indexPath.row] as? NSDictionary {
             if let images = photo["images"] as? NSDictionary {
-                if let lowResolutionImage = images["low_resolution"] as? String {
-                    let photoUrl = NSURL(string:lowResolutionImage)!
-                    cell.photoView.setImageWithURL(photoUrl)
+                if let lowResolutionImage = images["low_resolution"] as? NSDictionary {
+                    if let url = lowResolutionImage["url"] as? String {
+                        let photoUrl = NSURL(string:url)!
+                        cell.photoView.setImageWithURL(photoUrl)
+                    }
                 }
             }
         }
