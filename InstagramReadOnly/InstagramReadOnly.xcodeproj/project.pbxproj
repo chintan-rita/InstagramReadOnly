@@ -12,7 +12,7 @@
 		892534DB1BA2474400085B3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892534D91BA2474400085B3C /* Main.storyboard */; };
 		892534DD1BA2474400085B3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 892534DC1BA2474400085B3C /* Assets.xcassets */; };
 		892534E01BA2474400085B3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892534DE1BA2474400085B3C /* LaunchScreen.storyboard */; };
-		89417D4F1BA24C4A008714E0 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89417D4E1BA24C4A008714E0 /* PhotosViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		89417D4F1BA24C4A008714E0 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89417D4E1BA24C4A008714E0 /* PhotosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,6 +117,8 @@
 		892534CA1BA2474400085B3C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Chintan Rita";
 				TargetAttributes = {
