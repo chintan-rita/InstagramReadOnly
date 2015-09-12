@@ -1,18 +1,16 @@
 //
-//  PhotoViewCellTableViewCell.swift
+//  PhotoDetailsCell.swift
 //  InstagramReadOnly
 //
-//  Created by Saurabh Shah on 9/10/15.
+//  Created by Chintan Rita on 9/10/15.
 //  Copyright © 2015 Chintan Rita. All rights reserved.
 //
 
 import UIKit
 
-class PhotoViewCellTableViewCell: UITableViewCell {
+class PhotoDetailsCell: UITableViewCell {
 
-    @IBOutlet weak var userNameLabel: UILabel!
-    @IBOutlet weak var userLabel: UILabel!
-    @IBOutlet weak var photoView: UIImageView!
+    @IBOutlet weak var largePhotoView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,5 +21,11 @@ class PhotoViewCellTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func setSelectedPhoto(photo:String) {
+        let url = NSURL(string: photo)!
+        self.largePhotoView.setImageWithURL(url)
+    }
+    
 
 }
